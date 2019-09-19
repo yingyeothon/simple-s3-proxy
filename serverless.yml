@@ -27,18 +27,21 @@ functions:
       - http:
           method: put
           path: /{key}
+          cors: true
   get:
     handler: handler.get
     events:
       - http:
           method: get
           path: /{key}
+          cors: true
   delete:
     handler: handler.erase
     events:
       - http:
           method: delete
           path: /{key}
+          cors: true
 
 resources:
   Resources:
